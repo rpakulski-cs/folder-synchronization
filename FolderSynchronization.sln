@@ -7,6 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{97447CDE-A79
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderSync.App", "src\FolderSync.App\FolderSync.App.csproj", "{756D7101-B0DA-4D13-9B0F-5DC24F2C85F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderSync.Core", "src\FolderSync.Core\FolderSync.Core.csproj", "{D8847C51-6F5F-4C38-8EF6-F2C5406AFF35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F8A1907A-227F-47D7-9425-BE79AD147A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderSync.UT", "tests\FolderSync.UT\FolderSync.UT.csproj", "{A8983B8D-9A4C-4D3F-87F8-29198A5E7076}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +26,18 @@ Global
 		{756D7101-B0DA-4D13-9B0F-5DC24F2C85F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{756D7101-B0DA-4D13-9B0F-5DC24F2C85F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{756D7101-B0DA-4D13-9B0F-5DC24F2C85F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8847C51-6F5F-4C38-8EF6-F2C5406AFF35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8847C51-6F5F-4C38-8EF6-F2C5406AFF35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8847C51-6F5F-4C38-8EF6-F2C5406AFF35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8847C51-6F5F-4C38-8EF6-F2C5406AFF35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8983B8D-9A4C-4D3F-87F8-29198A5E7076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8983B8D-9A4C-4D3F-87F8-29198A5E7076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8983B8D-9A4C-4D3F-87F8-29198A5E7076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8983B8D-9A4C-4D3F-87F8-29198A5E7076}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{756D7101-B0DA-4D13-9B0F-5DC24F2C85F1} = {97447CDE-A79A-4DC0-9C46-CB4D974B33B5}
+		{D8847C51-6F5F-4C38-8EF6-F2C5406AFF35} = {97447CDE-A79A-4DC0-9C46-CB4D974B33B5}
+		{A8983B8D-9A4C-4D3F-87F8-29198A5E7076} = {F8A1907A-227F-47D7-9425-BE79AD147A40}
 	EndGlobalSection
 EndGlobal
