@@ -1,4 +1,4 @@
-﻿namespace FolderSync.Core;
+﻿namespace FolderSync.Core.FileUtils;
 
 public interface IFileSystem
 {
