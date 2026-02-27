@@ -1,7 +1,7 @@
 using FolderSync.Core.FileUtils;
 using FolderSync.Core.Logger;
 
-namespace FolderSync.Core
+namespace FolderSync.Core.Engine
 {
     public class SyncEngine
     {
@@ -52,7 +52,7 @@ namespace FolderSync.Core
                 {
                     var sourceDetails = _fileSystem.GetFileDetails(sourceFilePath);
                     var replicaFilePath = Path.Combine(currentReplicaDir, Path.GetFileName(sourceFilePath));
-                   
+
                     if (!_fileSystem.FileExists(replicaFilePath))
                     {
                         _fileSystem.CopyFileAndOverwrite(sourceFilePath, replicaFilePath);
