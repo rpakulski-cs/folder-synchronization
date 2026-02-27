@@ -1,5 +1,5 @@
 ﻿namespace FolderSync.Core.FileUtils;
-
+    
 public interface IFileSystem
 {
     bool DirectoryExists(string path);

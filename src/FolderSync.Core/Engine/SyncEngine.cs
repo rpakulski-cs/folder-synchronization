@@ -74,7 +74,7 @@ namespace FolderSync.Core
                     }
                     else
                     {
-                        _logger.LogDebug($"File '{sourceFilePath}' is up to date. No action needed.");
+                        _logger.LogInfo($"File '{sourceFilePath}' is up to date. No action needed.");
                     }
                 }
 
@@ -125,7 +125,7 @@ namespace FolderSync.Core
                     _logger.LogInfo($"Deleted directory '{currentReplicaDir}' (REDUNDANT DIRECTORY).");
                     continue;
                 }
-                _logger.LogDebug($"Directory '{currentReplicaDir}' exists in source. Checking its contents.");
+                _logger.LogInfo($"Directory '{currentReplicaDir}' exists in source. Checking its contents.");
 
                 var filesInReplicaDir = _fileSystem.GetFiles(currentReplicaDir);
                 foreach (var replicaFilePath in filesInReplicaDir)
@@ -139,7 +139,7 @@ namespace FolderSync.Core
                         _logger.LogInfo($"Deleted file '{replicaFilePath}' (REDUNDANT FILE).");
                     }
                     else
-                        _logger.LogDebug($"File '{replicaFilePath}' exists in source.");
+                        _logger.LogInfo($"File '{replicaFilePath}' exists in source.");
                 }
 
                 try
